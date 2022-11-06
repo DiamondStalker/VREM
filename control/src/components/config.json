@@ -1,0 +1,5 @@
+{
+    "mongose": {
+        "DB": "mongodb+srv://test:perragata27@cluster0.jdduep2.mongodb.net/test?retryWrites=true&w=majority"
+    }
+}
