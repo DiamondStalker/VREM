@@ -19,6 +19,16 @@ app.get('/', (req, res) => {
 })
 
 //Server config
-app.listen(7781, function(){
-    console.log('The NODE server is running ok')
+app.listen(5000, function(){
+    console.log('The NODE server is running ok');
+    console.log('Express listening on port', this.address())
 })
+
+if (typeof window !== 'undefined') {
+    console.log('You are on the browser');
+    // ✅ Can use window here
+  } else {
+    console.log('You are on the server')
+    // ⛔️ Don't use window here
+  }
+  
