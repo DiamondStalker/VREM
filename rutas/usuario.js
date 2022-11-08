@@ -68,24 +68,6 @@ router.post('/obtenerdatausuario', (req, res) =>{
     })
 })
 
-
-const options = {
-    headers :{
-        'Content-Type':'application/json'
-    }
-}
-
-//prueba mensaje
-
-router.get('/obtenerusuarioss',data,options)
-.then((res)=>{
-    console.log("Entro a la petucion")
-})
-.catch((err) =>{
-    console.log("Error")
-})
-
-
 //actualizar usuario
 router.post('/actualizausuario', (req, res) => {
     
