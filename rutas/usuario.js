@@ -69,6 +69,16 @@ router.post('/obtenerdatausuario', (req, res) =>{
     })
 })
 
+//prueba mensaje
+
+router.get('/obtenerusuarioss',data,options)
+.then((res)=>{
+    console.log("Entro a la petucion")
+})
+.catch((err) =>{
+    console.log("Error")
+})
+
 
 //actualizar usuario
 router.post('/actualizausuario', (req, res) => {
