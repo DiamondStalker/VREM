@@ -1,9 +1,5 @@
 const express = require('express')
 const app = express()
-const bodyParser = require('body-parser');
-
-
-
 
 //conn to mongoDB
 const dbFile = require('./conn')
@@ -14,10 +10,9 @@ const userroute = require('./rutas/usuario')
 //body parser
 const bodyParser = require('body-parser')
 app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({extended:'true'}))
+//app.use(bodyParser.urlencoded({extended:'true'}))
 
 app.use('/api', userroute)
-app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
     res.end('welcomer to the backend server')
