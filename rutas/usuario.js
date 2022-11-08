@@ -53,7 +53,6 @@ router.get('/obtenerusuarios', (req, res) =>{
         }else{
             res.send(err)
         }
-        console.log(JSON.stringify(req.headers));
     })
 })
 
@@ -68,6 +67,13 @@ router.post('/obtenerdatausuario', (req, res) =>{
         }
     })
 })
+
+
+const options = {
+    headers :{
+        'Content-Type':'application/json'
+    }
+}
 
 //prueba mensaje
 
