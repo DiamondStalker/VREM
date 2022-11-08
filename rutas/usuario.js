@@ -53,6 +53,7 @@ router.get('/obtenerusuarios', (req, res) =>{
         }else{
             res.send(err)
         }
+        console.log(JSON.stringify(req.headers));
     })
 })
 
